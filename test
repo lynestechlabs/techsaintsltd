@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Set the initial style for the navigation menu */
+    nav {
+      background-color: transparent;
+      padding: 10px;
+      text-align: center;
+      width: 100%;
+      transition: background-color 0.5s ease;
+    }
+
+    /* Set the style for the opaque navigation menu */
+    nav.opaque {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <script>
+    // Get the navigation menu element
+    var navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navigation menu
+    var sticky = navbar.offsetTop;
+
+    // Add the opaque class to the navigation menu on scroll
+    window.onscroll = function() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("opaque");
+      } else {
+        navbar.classList.remove("opaque");
+      }
+    };
+  </script>
+</body>
+</html>

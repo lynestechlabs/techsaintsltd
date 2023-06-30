@@ -1,0 +1,86 @@
+/* Hide the navigation container and show the hamburger menu icon */
+.nav-container {
+  display: block;
+  position: relative;
+  height: unset;
+  padding: 0;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.show-nav .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+/* Show the hamburger menu icon */
+.humburger {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: var(--font-size-lg);
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Animate the hamburger menu icon */
+.bar {
+  transition: all 0.3s ease-in-out;
+}
+
+.show-nav .bar:first-child {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.show-nav .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.show-nav .bar:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Styles for each navigation link */
+.nav-links li a {
+  display: block;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styles for active and current page links */
+.nav-links li a.active,
+.nav-links li a.current-page {
+  color: var(--primary-color);
+  border-bottom: none;
+  background-color: var(--hover-color);
+}
+
+/* Styles for hover effect on each link */
+.nav-links li a:hover {
+  color: var(--text-color);
+  background-color: var(--primary-color);
+}

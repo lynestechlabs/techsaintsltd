@@ -1,0 +1,165 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #f5f5f5;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+/* Add a width to the .nav-container class to set the size of the sidebar. */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  background-color: #f5f5f5;
+  width: 200px; /* Width of sidebar */
+}
+/* Hide the hamburger menu button in larger screens using media queries. */
+.hamburger {
+  display: block; /* Hide hamburger menu button */
+}
+/* @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  } */
+/* Position the elements in the sidebar using flexbox properties. */
+.logo {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-links li a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+.nav-links li a.active,
+.nav-links li a.current-page {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  background-color: var(--hover-color);
+}
+
+.nav-links li a:hover {
+  color: var(--text-color);
+}
+/* Add styles to show/hide the sidebar using JavaScript */
+.show-nav .nav-container {
+  transform: translateX(0); /* show sidebar */
+}
+
+.hide-nav .nav-container {
+  transform: translateX(-200px); /* hide sidebar */
+}
+/* Here is the modified CSS code to create a sidebar: */
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* align logo to the left and links to the right */
+  align-items: center; /* center items vertically */
+  padding: 0 30px;
+  background-color: #f5f5f5;
+  width: 200px; /* Width of sidebar */
+  height: 100%; /* Height of sidebar */
+  position: fixed; /* Fix sidebar position */
+  top: 0; /* set top to 0 */
+  left: -200px; /* hide sidebar initially */
+  transition: all 0.3s ease-in-out; /* add transition effect */
+}
+/* Logo */
+.logo {
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+  color: var(--text-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Styles for the hamburger  */
+.hamburger {
+  display: none;
+  color: #333;
+}
+/* Styles for the bars in the hamburger menu */
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-color);
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+}
+/* Styles to show/hide the mobile menu */
+.show-nav .bar:first-child {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.show-nav .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.show-nav .bar:last-child {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex; /* create a flex container for the links */
+  flex-direction: column; /* Add new*/
+  list-style: none;
+  gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+/* Styles for each navigation link */
+.nav-links li a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+}
+/* Styles for active and current page links */
+.nav-links li a.active,
+.nav-links li a.current-page {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  background-color: var(--hover-color);
+}
+
+/* Styles for hover effect on each link */
+.nav-links li a:hover {
+  color: var(--text-color);
+}
+
+/* Show/hide sidebar */
+.hide-nav .nav-container {
+  transform: translateX(-200px); /* hide sidebar */
+}
+
+.show-nav .nav-container {
+  transform: translateX(0); /* show sidebar */
+}

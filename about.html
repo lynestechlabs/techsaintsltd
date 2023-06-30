@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Find out Who we are</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='style2.css'>-->
+    <link rel='shortcut icon' type='image/png'  href="images/tsl.png">
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header>
+       
+      <div class="nav-container">
+        <div class="logo">technology <span>Saints ltd</span> </div>
+        <div class="hamburger"></div>
+        <nav>
+          <ul >
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="service.html">services</a></li>
+            <!-- <li><a href="#">store</a></li>-->
+            <li><a href="about.html" class="current-page">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </div>
+      </header>
+      
+      <div class="below-fold-abt-page">
+        <div class="above-the-fold-abt">
+          <!-- <img src="images/banner1.svg" alt="SVG Image">-->
+           
+           <div class="content-abt">
+             <!--<img src="images/shape.png" alt="Landing Page Image">-->
+             <h2><span>About us</span></h2>
+           </div>
+         </div>
+            <!--<div class="article-title"><h5>Insights</h5></div>-->
+            <div class="lower-section-abt">
+                <div class="image">
+                    <img src="images/banner3.png" alt="promotional-flyer" />
+                </div>
+                <div class="article-text-abt">
+                    <p><span class="drop-cap">O</span>
+                      ur company was founded on the belief that navigating the tech world can be a daunting task,
+                       especially with the abundance of advertisements and the prevalence of fake products.
+                       <br><br> 
+                       We were inspired by stories of individuals who broke into the tech industry via non-traditional methods and backgrounds
+                      <br>
+                      <br>
+                      <ul class="abt-list">
+                        <li>
+                          1. We wanted to create a platform that would guide people through the maze of the
+                           tech world and help them distinguish between genuine, original products and fake ones. 
+                           We were also inspired by the story of Mark Rober, who created a company that aimed to inspire
+                            people all over the world to love science and change the way they think about it
+                        </li>
+                        <li>
+                          2. We believe that technology has the power to change the world for the better, and we want to help people harness that power. Our goal is to provide our customers with the knowledge and tools they need to succeed in the tech world. We are inspired by the success stories of companies like Pinterest, whose inventor, Ben Silbermann, clung to his idea and battled to make it work
+                         </li>
+                        <li>3. We hope to inspire our customers to pursue their dreams and achieve success in the tech industry.
+                           </li>
+                       
+                      </ul>                      
+                           <button  class="read-more">read-more..</button>
+                  </p>
+                    <div class="hidden-content">
+                      
+
+                    </div>
+                </div>
+          </div>
+            <!-- <div class="article-title"><h5>Insight</h5></div> -->
+           
+      </div>
+        <footer class="footer-container">
+          <div class="footer-row">
+            <div class="footer-col">
+              <h5>Company infor</h5>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">blog</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Get help</h5>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">order status</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>products catalog</h5>
+              <ul>
+                <li><a href="#">categories</a></li>
+                <li><a href="#">All</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h5>Follow us</h5>
+              <div class="social_links">
+                <div>
+                  <a href="#"
+                    ><ion-icon name="logo-facebook">facebook</ion-icon></a
+                  >
+                </div>
+                <div>
+                  <a href="#"
+                    ><ion-icon name="logo-twitter">twitter</ion-icon></a
+                  >
+                </div>
+                <div>
+                  <a href="#"
+                    ><ion-icon name="logo-instagram">instagram</ion-icon></a
+                  >
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          <div class="horizontal-line"></div>
+          <div class="trademark"><p>Copyright ©  2010-2023 technology saints ltd Company. All rights reserved.</p></div>
+        </footer>
+      
+    </div>
+    <script>
+      // const hamburgerBtn = document.querySelector(".humburger");
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('nav');
+
+      hamburger.addEventListener('click',() => {
+        // alert('button clicked');
+         navLinks.classList.toggle('active');
+      });
+      document.addEventListener('click', (e) => {
+        if (!e.target.closest('.navLinks') && !e.target.closest('.hamburger')) {
+            menu.classList.remove('active');
+        }
+        });
+        
+        window.addEventListener('scroll', function() {
+          var header = document.querySelector('header');
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          
+          if (scrollTop > 0) {
+            header.classList.add('header-scrolled');
+          } else {
+            header.classList.remove('header-scrolled');
+          }
+        });
+    </script>
+  </body>
+</html>
