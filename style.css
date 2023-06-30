@@ -87,7 +87,7 @@ header{
   z-index: 9992;
 }
 .logo{
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
 }
 .logo span{
@@ -306,7 +306,6 @@ li a .current-page::after{
   background-image: linear-gradient(to top, #bed7ea, #fff);
 }
 .below-fold-abt-page {
- 
   margin: 0 auto;
   padding: 2rem 9rem;
   /* background-color:yellow; */
@@ -402,7 +401,7 @@ li a .current-page::after{
 .lower-section-service {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
   /* align-items: flex-start; */
   /* margin-top: 20px; */
 }
@@ -448,9 +447,10 @@ li a .current-page::after{
   /* opacity: rgba(245, 245, 245,0.5); */
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
-  padding-left: 20px; /* Adjust as needed */
+  margin-bottom: 10px;
+  /* padding-left: 20px;  */
   flex-wrap: wrap;
+  text-align: justify;
   /* width: 50%; */
   /* border: #ff5a41 2px solid; */
 }
@@ -868,6 +868,7 @@ button:hover {
   .nav-container{
     flex-direction: column;
     align-items: center;
+    background: white
   }
   
   .hamburger{
@@ -884,6 +885,8 @@ button:hover {
     display: block;
     text-align: center;
     padding: 1rem 0;
+    width: 100%;
+     /* background: white */
   }
   li{
     
@@ -896,6 +899,29 @@ button:hover {
     display: block;
   }
   /* above the fold styling */
+  .below-fold,.below-fold-svc ,.below-the-fold {
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    /* background-color: var(--secondary-color); */
+    /* background-image: linear-gradient(to top, #bed7ea, #fff); */
+  }
+  .below-fold-abt-page {
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    /* background-color:yellow; */
+  }
+  .lower-section-abt{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1px;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+  .article-text-abt{
+    margin-left: 0;
+    font-size: 16px;
+  }
   .content h1{
     font-size: 1.8em;
     /* font-size: var(--font-size-lg); */
@@ -911,6 +937,10 @@ button:hover {
   /* below the fold section */
   .lower-section {
     flex-direction: column;
+  }
+  .product {
+    width: 900px;
+  
   }
   .lower-section-service{
     flex-direction: column;
@@ -942,8 +972,21 @@ button:hover {
   .blog-content {
     flex-direction: column;
     align-items: center;
+   
   }
-
+  .below-fold-blg {
+ 
+    margin: 0 auto;
+    padding: 1rem 1rem;
+    width: 100%;
+    /* background-color: var(--secondary-color); */
+    background-image: linear-gradient(to top, #bed7ea, #fff); 
+  }
+  .right-column {
+    width:100%;
+    background-color:none;
+    text-align: center;
+  }
   .image-overlay {
     position: absolute;
     top: 0;
