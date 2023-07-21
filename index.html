@@ -42,42 +42,40 @@
              is here to illuminate the path and empower you against the 
              confusing world of poor-quality tech. Prepare to embark on a journey 
              of knowledge and discover the insights that will revolutionize your tech buying experience.</p>
-          <a href="#" class="cta-btn">call to action</a>
+          <!-- <a href="images/flyer2.pdf" download="flyer2.pdf" class="cta-btn">call to action</a> -->
+          <a href="#" id="cta-btn" class="cta-btn">Get leaflet</a>
+        </div>
         </div>
       </div>
       <div class="below-fold">
             <div class="article-title"><h2>Insights</h2></div>
             <div class="lower-section1">
                 <div class="image">
-                    <img class="landingpage-article-img" src="images/used-mobile.jpg" alt="mobiles" />
+                  
+                    <!-- <img class="landingpage-article-img" src="images/used-mobile.jpg" alt="mobiles" /> -->
                 </div>
+                
                 <div class="article-text">
-                    
                        <h4>Your Guide to Quality Products.</h4><br>
-                       <p> <span class="drop-cap">W</span>e excels in providing the best services 
+                       <p class="text"> <span class="drop-cap">W</span>e excels in providing the best services 
                        in various areas. When it comes to the sale of refurbished tech gadgets, 
                        Technology Saints carefully selects and restores top-quality devices,
                         ensuring they meet high standards of performance and reliability. 
-                        With an extensive inventory of mobile phone spare parts, 
-                       
-                           <button  class="read-more">read-more..</button>
-                  </p>
-                    <div class="hidden-content">
-                      <p>
+                        With an extensive inventory of mobile phone spare parts, <span id="extra-text-1"  class="moreText">
                         Technology Saints offers an unmatched selection, guaranteeing customers access
                         to genuine and durable components for their devices. Additionally, 
                         their sale of electronics encompasses a wide range of cutting-edge products,
                          curated with a focus on innovation, functionality, and customer satisfaction,
-                          making Technology Saints the go-to destination for all technology enthusiasts.
+                          making Technology Saints the go-to destination for all technology enthusiasts.</span>
                       </p>
-
-                    </div>
+                   
+                      <button class="read-more-btn" data-target="extra-text-1">Read More</button>
                 </div>
-            </div>
+            </div></span>
             <!-- <div class="article-title"><h5>Insight</h5></div> -->
-            <div class="lower-section1">
+            <!-- <div class="lower-section1"> -->
                   <div class="article-text">
-                    <p>
+                    <p class="text">
                       In an era of rapid technological advancement, 
                       it's no surprise that the market is brimming with subpar 
                       tech offerings that fail to live up to expectations. 
@@ -85,48 +83,42 @@
                        amidst the darkness.<br><br> With our unwavering commitment to quality 
                        and customer satisfaction, we are here to demystify the confusing 
                        landscape of poor-quality tech.
-                      
-                        <button onclick="toggleContent()" class="read-more">read-more..</button> 
-                    </p>
-                    <div class="hidden-content">
-                      <p>
+                       <span id="extra-text-2" class="moreText">
                         Say goodbye to wasted time and money 
                         on lackluster gadgets as we equip you with the tools and knowledge needed 
                         to make informed decisions.
- 
                        Technology Saints serves as your trusted guide, offering comprehensive 
                        insights into the common pitfalls, deceptive marketing tactics, and red 
                        flags to watch out for. Our expertise enables us to separate the gems from
                         the disappointments, ensuring you can navigate the tech world with confidence.
-                         Let us empower you to reclaim control over your purchases and usher in a new 
-                         era of tech excellence. Join us as we unravel the complexities of the maze,
-                          unveiling the secrets that will steer you towards quality and satisfaction.
-                           Together, we will conquer the confusing world of poor-quality tech and embrace
-                          a future where Technology Saints leads the way to unmatched tech excellence.
-                      </p>
-                    </div>
-                      
-                 
+                        Let us empower you to reclaim control over your purchases and usher in a new 
+                        era of tech excellence. Join us as we unravel the complexities of the maze,
+                        unveiling the secrets that will steer you towards quality and satisfaction.
+                        Together, we will conquer the confusing world of poor-quality tech and embrace
+                        a future where Technology Saints leads the way to unmatched tech excellence.
+                        </span>
+                      </p> 
+                      <button class="read-more-btn" data-target="extra-text-2">Read More</button>
                 </div>
                 <!-- <div class="image">
                     <img class="landingpage-article-img2" src="images/img_mountains_wide.jpg" alt="Image" />
                 </div> -->
-            </div>
+            <!-- </div> -->
       </div>
 
           <div class="testimonial-header"><h2>Testimonials</h2></div>
       <div class="testimonials-container">
         <div class="testimonial">
           <p>"I have tried numerous products, but none have come close to the quality and effectiveness of this one. It's simply outstanding! I can genuinely say that it has transformed my life for the better. Thank you!"</p>
-          <span>John Doe</span>
+          <span>Joy</span>
         </div>
         <div class="testimonial">
           <p>"I've been a loyal customer for years, and I continue to be impressed by the exceptional level of service provided by this company. Their dedication to customer satisfaction is unparalleled. The product is authentic, reliable, and always exceeds my expectations. Highly recommended!"</p>
-          <span>Jane Smith</span>
+          <span>Jane</span>
         </div>
         <div class="testimonial">
           <p>"I cannot express how grateful I am for discovering this incredible product. It has genuinely changed the way I live and feel. The company's commitment to delivering a genuine and trustworthy solution is commendable. I'm a customer for life!"</p>
-          <span>David Williams</span>
+          <span>Sam</span>
         </div>
       </div>
       
@@ -182,42 +174,7 @@
         </footer>
       
     </div>
-     <!-- s<script src="bootstrap.min.js"></script>  -->
-    <script>
-     
-     
-      var video = document.getElementById("myVideo");
-
-      video.addEventListener("timeupdate", function () {
-        if (video.currentTime >= 20) {
-          video.currentTime = 10; // Set the desired loop timing in seconds
-        }
-      });
-
-      // const hamburgerBtn = document.querySelector(".humburger");
-      const hamburger = document.querySelector('.hamburger');
-      const navLinks = document.querySelector('nav');
-
-      hamburger.addEventListener('click',() => {
-        // alert('button clicked');
-         navLinks.classList.toggle('active');
-      });
-      document.addEventListener('click', (e) => {
-        if (!e.target.closest('.navLinks') && !e.target.closest('.hamburger')) {
-            menu.classList.remove('active');
-        }
-        });
-
-        window.addEventListener('scroll', function() {
-          var header = document.querySelector('header');
-          var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-          
-          if (scrollTop > 0) {
-            header.classList.add('header-scrolled');
-          } else {
-            header.classList.remove('header-scrolled');
-          }
-        });
-    </script>
+     <script src="main.js"></script> 
+   
   </body>
 </html>
